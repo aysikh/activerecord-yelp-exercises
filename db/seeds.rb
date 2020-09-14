@@ -43,3 +43,6 @@ chickfila = Restaurant.new
 chickfila.update(name: "Chick-fil-A")
 dish1 = Dish.new 
 dish1.update(name: "Dish", restaurant: chickfila)
+
+dishtag = DishTag.new
+dishtag.update(dish: dish1, tag: Tag.find_by(name: "Vegetarian"))
